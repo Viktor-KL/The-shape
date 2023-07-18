@@ -1,0 +1,30 @@
+/* ---- Mixins ---- */
+/* -- Transition -- */
+@mixin transition($delay: $transition-delay) {
+    transition: transition-property $delay $transition-timing;
+}
+
+/* -- Link Hover -- */
+@mixin link-hover($opacity: $link-hover-opacity) {
+    opacity: $opacity;
+    @include transition();
+}
+
+/* -- Flexible -- */
+@mixin flexible {
+    display: flex;
+    align-items: center;
+}
+
+/* -- Center All Content -- */
+@mixin center-all-content {
+	@include flexible();
+	justify-content: center;
+	text-align: center;
+}
+
+/* -- Reset Indents -- */
+@mixin reset-indents {
+    margin: 0;
+    padding: 0;
+}
