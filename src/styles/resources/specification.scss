@@ -15,6 +15,12 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    width: 90%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     @include reset-indents();
 }

@@ -1,0 +1,31 @@
+/* ---- Button ---- */
+@import '/src/styles/resources/';
+
+.default {
+    @include transition();
+    text-align: center;
+    font-size: 16px;
+
+    &:hover, &:active {
+        @include transition()
+    }
+}
+
+.dark {
+    background: $accent-color;
+    color: $white;
+    padding: 14px 0;
+}
+
+.ghost {
+    background: none;
+    color: $black;
+    border: 1px solid $black;
+    padding: 14px 0;
+}
+
+.white {
+    background: $white;
+    color: $black;
+    padding: 21px 0;
+}

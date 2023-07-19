@@ -1,0 +1,29 @@
+{
+    "links": [
+        {
+            "text": "Про нас",
+            "href": "#about"
+        },
+        {
+            "text": "Особливості",
+            "href": "#benefits"
+        },
+        {
+            "text": "Що ви отримаєте",
+            "href": "#service"
+        },
+        {
+            "text": "Відгуки",
+            "href": "#feedbacks"
+        },
+        {
+            "text": "FAQ",
+            "href": "#faq"
+        }
+    ],
+
+    "button": {
+        "text": "Записатись",
+        "className": "dark"
+    }
+}

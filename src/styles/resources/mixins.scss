@@ -1,30 +1,68 @@
 /* ---- Mixins ---- */
 /* -- Transition -- */
 @mixin transition($delay: $transition-delay) {
-    transition: transition-property $delay $transition-timing;
+  transition: transition-property $delay $transition-timing;
 }
 
 /* -- Link Hover -- */
 @mixin link-hover($opacity: $link-hover-opacity) {
-    opacity: $opacity;
-    @include transition();
+  opacity: $opacity;
+  @include transition();
 }
 
 /* -- Flexible -- */
 @mixin flexible {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* -- Center All Content -- */
 @mixin center-all-content {
-	@include flexible();
-	justify-content: center;
-	text-align: center;
+  @include flexible();
+  justify-content: center;
+  text-align: center;
+}
+
+/* -- Full Width Content -- */
+@mixin full-width-content {
+  @include flexible;
+  justify-content: space-between;
 }
 
 /* -- Reset Indents -- */
 @mixin reset-indents {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* -- Media Query -- */
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+@mixin tablet-large {
+  @media screen and (max-width: $tablet-large) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin phablet {
+  @media screen and (max-width: $phablet) {
+    @content;
+  }
+}
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
 }

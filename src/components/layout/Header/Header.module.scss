@@ -1,0 +1,19 @@
+@import '/src/styles/resources/';
+
+.wrapper {
+  @include full-width-content;
+  padding: 1rem 0;
+}
+
+.linksWrapper {
+  @include flexible;
+  gap: 2rem;
+
+  a {
+    font-size: 16px;
+  }
+}
+
+.button {
+    width: 9rem;
+}
