@@ -1,0 +1,21 @@
+@import '/src/styles/resources/';
+
+.wrapper {
+    @include full-width-content;
+    gap: 1.5em;
+}
+
+.description {
+    font-size: 1em;
+    opacity: .7;   
+    margin: 1em 0 2em;
+}
+
+.buttonWrapper {
+    @include flexible;
+    gap: 1.5em;
+}
+
+.button {
+    width: 11em;
+}

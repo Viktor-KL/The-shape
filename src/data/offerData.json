@@ -1,0 +1,21 @@
+{
+  "sectionId": "offer",
+  "content": {
+    "title": "Отримайте незабутні моменти релаксації та догляду за своїм тілом",
+    "description": "Відчуйте блаженство, записуйтесь на масаж в нашому спокійному, затишному приміщенні та насолоджуйтесь професійним масажем!",
+    "dark_btn": {
+      "text": "Записатись",
+      "anchor": "#consultation"
+    },
+    "ghost_btn": {
+      "text": "Наші послуги",
+      "anchor": "#service"
+    }
+  },
+  "image": {
+    "url": "/img/offer/img-1.png",
+    "width": 495,
+    "height": 725,
+    "alt": "pretty woman"
+  }
+}
