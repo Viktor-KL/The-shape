@@ -1,0 +1,22 @@
+@import "/src/styles/resources/";
+
+.section {
+    background: $light-green;
+    padding: 6em 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.description {
+    font-size: 16px;
+    opacity: .7;   
+    margin: 1em 0 2em;
+}
+
+.button {
+    display: inline;
+}

@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 
 import offerData from 'data/offerData.json'
 import OfferContent from "./OfferContent";

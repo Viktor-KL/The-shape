@@ -1,3 +1,4 @@
+import About from 'components/screens/About/About'
 import Offer from 'components/screens/Offer/Offer'
 import Head from 'next/head'
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
 
       <Offer />
+      <About />
     </>
   )
 }

@@ -24,7 +24,7 @@ $btn-white-color-active: $black;
 
 /* -- Typography -- */
 $main-font-family: 'Montserrat Alternates', sans-serif;
-$secondary-font-family: 'Mak', cursive;
+$secondary-font-family: 'Mak', sans-serif;
 $font-size: 20px;
 $font-weight: 400;
 $font-color: $black;
@@ -57,7 +57,3 @@ $header-padding-phablet-gutter: 15px;
 /* -- Link -- */
 $link-hover-opacity: 0.7;
 
-@font-face {
-    font-family: 'Mak', cursive;
-    src: url('/public/fonts/MAK.woff') format(woff);
-}

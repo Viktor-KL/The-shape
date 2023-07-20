@@ -1,6 +1,5 @@
+import IImage from '../IImage'
+
 export default interface IOfferImage {
-    url: string,
-    width: number,
-    height: number,
-    alt: string
+  IOfferImage: IImage
 }
