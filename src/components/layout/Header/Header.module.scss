@@ -5,15 +5,21 @@
   padding: 1em 0;
 }
 
+.logo {
+  font-family: $secondary-font-family;
+}
+
 .linksWrapper {
   @include flexible;
   gap: 2em;
 
   a {
     font-size: 16px;
-  }
-}
+    opacity: .7;
+    @include transition;
 
-.button {
-    width: 9em;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

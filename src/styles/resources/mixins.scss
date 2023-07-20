@@ -1,7 +1,7 @@
 /* ---- Mixins ---- */
 /* -- Transition -- */
 @mixin transition($delay: $transition-delay) {
-  transition: transition-property $delay $transition-timing;
+  transition: $transition-property $delay $transition-timing;
 }
 
 /* -- Link Hover -- */

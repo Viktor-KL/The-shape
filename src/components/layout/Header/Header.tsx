@@ -13,7 +13,7 @@ const Header: FC = () => {
     <header className={styles.header} id='header'>
       <div className='container'>
         <div className={styles.wrapper}>
-          <Link href='/' className={styles.logo}>
+          <Link href='#offer' className={styles.logo}>
             The shape
           </Link>
 

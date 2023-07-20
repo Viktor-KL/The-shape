@@ -2,30 +2,57 @@
 @import '/src/styles/resources/';
 
 .default {
-    @include transition();
-    text-align: center;
-    font-size: 16px;
+  @include transition();
+  text-align: center;
+  font-size: 16px;
 
-    &:hover, &:active {
-        @include transition()
-    }
+  &:hover,
+  &:active {
+    @include transition();
+  }
 }
 
 .dark {
-    background: $accent-color;
-    color: $white;
-    padding: 14px 0;
+  background: $accent-color;
+  color: $white;
+  padding: 14px 36px;
+
+  &:hover {
+    background: $btn-dark-bg-hover;
+  }
+
+  &:active {
+    background: $btn-dark-bg-active;
+  }
 }
 
 .ghost {
-    background: none;
-    color: $black;
-    border: 1px solid $black;
-    padding: 14px 0;
+  background: none;
+  color: $black;
+  border: 1px solid $black;
+  padding: 14px 32px;
+
+  &:hover {
+    background: $btn-ghost-bg-hover;
+    color: $btn-ghost-color-hover;
+  }
+
+  &:active {
+    background: $btn-ghost-bg-active;
+    color: $btn-ghost-color-active;
+  }
 }
 
 .white {
-    background: $white;
-    color: $black;
-    padding: 21px 0;
+  background: $white;
+  color: $black;
+  padding: 21px 0;
+
+  &:hover {
+    background: $btn-white-bg-hover;
+  }
+
+  &:active {
+    background: $btn-white-bg-active;
+  }
 }
