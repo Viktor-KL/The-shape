@@ -1,0 +1,28 @@
+@import '/src/styles/resources/';
+
+.wrapper {
+    @include full-width-content;
+    gap: 1.5em;
+}
+
+.a {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.panel_header {
+    border-bottom: 1px solid $black;
+}
+
+.question {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: $main-font-family;
+    padding-top: 8px;
+}
+
+.description {
+    @include description(16px);
+    font-family: $main-font-family;
+    padding-top: 8px;
+}

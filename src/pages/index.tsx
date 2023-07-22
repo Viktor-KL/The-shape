@@ -1,5 +1,6 @@
 import About from 'components/screens/About/About'
 import Benefits from 'components/screens/Benefits/Benefits'
+import Faq from 'components/screens/Faq/Faq'
 import Offer from 'components/screens/Offer/Offer'
 import Head from 'next/head'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Offer />
       <About />
       <Benefits />
+      <Faq />
     </>
   )
 }
