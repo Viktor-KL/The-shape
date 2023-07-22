@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import serviceData from 'data/serviceData.json'
 
-import styles from './Offer.module.scss'
+import styles from './Service.module.scss'
 
 const Service: FC = () => {
     return (

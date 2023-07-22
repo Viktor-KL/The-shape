@@ -10,6 +10,12 @@
   @include transition();
 }
 
+/* -- UI -- */
+@mixin description($fz) {
+  font-size: $fz;
+  opacity: .7;
+}
+
 /* -- Flexible -- */
 @mixin flexible {
   display: flex;

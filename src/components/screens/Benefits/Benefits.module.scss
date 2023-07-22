@@ -1,0 +1,39 @@
+@import '/src/styles/resources/';
+
+.section {
+    padding: 6em;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.block {
+    width: 19.5em;
+    border: 1px solid $black;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em;
+}
+
+.description {
+    @include description(16px);
+}
+
+.left_leaves {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.right_leaves {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

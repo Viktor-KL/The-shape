@@ -10,8 +10,7 @@
 }
 
 .description {
-    font-size: 1em;
-    opacity: .7;  
+    @include description(1em);
     margin: 1em 0 2em;
 }
 
