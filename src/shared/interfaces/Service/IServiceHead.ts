@@ -1,4 +1,4 @@
 export default interface IServiceContent {
     title: string,
-    description: string
+    description: string,
 }

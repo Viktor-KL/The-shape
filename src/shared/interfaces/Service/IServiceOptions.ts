@@ -1,5 +1,5 @@
 export default interface IServiceOption {
     option: string,
-    value: string,
+    value?: string,
 }
 
