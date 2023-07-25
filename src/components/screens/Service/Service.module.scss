@@ -1,0 +1,85 @@
+@import '/src/styles/resources/';
+
+.section {
+  background: $accent-color;
+  padding: 6em 0;
+
+  * {
+    color: $white;
+  }
+}
+
+.head {
+  margin-bottom: 2em;
+}
+
+.description {
+  @include description(16px);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.service {
+  @include flexible;
+  gap: 1.5em;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  color: #000;
+  background: #e0e1d9 !important;
+  font-size: $h3-font-size;
+  font-family: $main-font-family;
+  height: 100px;
+  width: 390px;
+  padding: 36px;
+  border-radius: 0;
+  -webkit-appearance: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selectArrow {
+  position: absolute;
+  top: 40%;
+  right: 2em;
+
+  &::after {
+    content: url('./../../../../public/img/arrow.svg');
+    font-size: 18px;
+  }
+}
+
+.optionBlock {
+  font-size: $h3-font-size;
+  width: 390px;
+  border: 1px solid $white;
+  height: 100px;
+  @include flexible;
+  padding: 0.8em 1.8em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.contentWrapper {
+  @include flexible;
+  gap: 1em;
+  padding: 2em;
+  border: 1px solid $white;
+}
+
+.name {
+  font-family: $secondary-font-family;
+  margin-bottom: 1em;
+}
