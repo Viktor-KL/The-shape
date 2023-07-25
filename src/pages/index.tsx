@@ -1,5 +1,6 @@
 import About from 'components/screens/About/About'
 import Benefits from 'components/screens/Benefits/Benefits'
+import Consultation from 'components/screens/Consultation/Consultation'
 import Faq from 'components/screens/Faq/Faq'
 import Offer from 'components/screens/Offer/Offer'
 import Service from 'components/screens/Service/Service'
@@ -19,6 +20,7 @@ export default function Home() {
       <Service />
       <About />
       <Benefits />
+      <Consultation />
       <Faq />
     </>
   )

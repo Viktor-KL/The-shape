@@ -8,7 +8,7 @@ import styles from './Service.module.scss'
 const ServiceDetails: FC = () => {
   return (
     <div className={styles.image}>
-      <Image />
+      {/* <Image /> */}
     </div>
   )
 }

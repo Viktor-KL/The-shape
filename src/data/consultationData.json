@@ -1,0 +1,49 @@
+{
+  "sectionId": "#consultation",  
+  "head": {
+    "title": "Виберіть свій ідеальний масаж прямо зараз!",
+    "description": "Заповніть форму нижче і дозвольте нам надати вам незабутній масаж. Не відкладайте своє благополуччя на потім, запишіться вже сьогодні!"
+  },
+  "inputs": [
+    {
+      "type": "text",
+      "placeholder": "Як до Вас звертатись?"
+    },
+    {
+      "type": "tel",
+      "placeholder": "+380"
+    }
+  ],
+  "select": [
+    {
+      "option": "massage1",
+      "value": "massage1"
+    },
+    {
+      "option": "massage2",
+      "value": "massage2"
+    },
+    {
+      "option": "massage3",
+      "value": "massage3"
+    },
+    {
+      "option": "Розслаблення та відпочинок SPA",
+      "value": "massage4"
+    },
+    {
+      "option": "Антицилюлітні програми",
+      "value": "massage5"
+    }
+  ],
+  "inputBtn": {
+    "type": "submit",
+    "value": "Проконсультуватись"
+  },
+  "image": {
+    "url": "/img/consultation/img-1.png",
+    "width": 390,
+    "height": 350,
+    "alt": "plant"
+  }
+}

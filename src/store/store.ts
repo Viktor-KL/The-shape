@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
+import serviceSlice from './slices/serviceSlice'
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    service: serviceSlice
+  },
   devTools: true,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),
