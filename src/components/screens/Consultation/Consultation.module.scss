@@ -1,0 +1,59 @@
+@import '/src/styles/resources/';
+
+.section {
+  padding: 6em;
+  background: $accent-color;
+
+  * {
+    color: $white;
+  }
+}
+
+.wrapper {
+  @include flexible;
+  gap: 1.5em;
+}
+
+.description {
+  @include description(16px);
+  margin: 1em 0 2em;
+}
+
+.form {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+
+  * {
+    width: 390px;
+    padding: 1em;
+  }
+}
+
+.input {
+  background: none;
+  border: 1px solid $white;
+
+  &::placeholder {
+    color: $white;
+    opacity: 0.7;
+    font-size: 16px;
+  }
+}
+
+.submitBtn {
+    background: $white;
+    color: $black;
+    font-size: 16px;
+    height: 60px;
+    @include transition;
+
+    &:hover {
+        cursor: pointer;
+        background: $light-green;
+    }
+
+    &:active {
+        background: #B3B4AE;
+    }
+}

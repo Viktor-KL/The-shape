@@ -1,4 +1,4 @@
 export default interface IConsultationSelect {
-    option: string,
+    label: string,
     value: string
 }

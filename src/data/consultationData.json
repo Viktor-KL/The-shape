@@ -16,27 +16,30 @@
   ],
   "select": [
     {
-      "option": "massage1",
+      "label": "massage1",
       "value": "massage1"
     },
     {
-      "option": "massage2",
+      "label": "massage2",
       "value": "massage2"
     },
     {
-      "option": "massage3",
+      "label": "massage3",
       "value": "massage3"
     },
     {
-      "option": "Розслаблення та відпочинок SPA",
+      "label": "Розслаблення та відпочинок SPA",
       "value": "massage4"
     },
     {
-      "option": "Антицилюлітні програми",
+      "label": "Антицилюлітні програми",
       "value": "massage5"
     }
   ],
-  "inputBtn": {
+  "selectDefaultValue": {
+    "defaultValue": "Вибір послуги"
+  },
+  "submitBtn": {
     "type": "submit",
     "value": "Проконсультуватись"
   },
