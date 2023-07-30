@@ -1,0 +1,77 @@
+{
+  "logo": "The shape",
+  "items": [
+    {
+      "link": "Про нас",
+      "href": "#about"
+    },
+    {
+      "link": "Послуги",
+      "href": "#service"
+    },
+    {
+      "link": "domen.help@gmail.com",
+      "href": "#"
+    },
+    {
+      "link": "Особливості",
+      "href": "#benefits"
+    },
+    {
+      "link": "Що ви отримаєте",
+      "href": "#service"
+    },
+    {
+      "link": "+380998794033",
+      "href": "tel:+380998794033"
+    },
+    {
+      "link": "Відгуки",
+      "href": "#feedbacks"
+    },
+    {
+      "link": "FAQ",
+      "href": "#faq"
+    }
+  ],
+  "socials": [
+    {
+      "href": "https://instagram.com",
+      "url": "/img/footer/img-1.svg",
+      "width": 24,
+      "height": 24,
+      "alt": "socials-icon"
+    },
+    {
+      "href": "https://facebook.com",
+      "url": "/img/footer/img-2.svg",
+      "width": 24,
+      "height": 24,
+      "alt": "socials-icon"
+    },
+    {
+      "href": "https://telegram.com",
+      "url": "/img/footer/img-3.svg",
+      "width": 24,
+      "height": 24,
+      "alt": "socials-icon"
+    },
+    {
+      "href": "https://tiktok.com",
+      "url": "/img/footer/img-4.svg",
+      "width": 24,
+      "height": 24,
+      "alt": "socials-icon"
+    }
+  ],
+  "infoLinks": [
+    {
+      "link": "Privacy Policy",
+      "href": "#"
+    },
+    {
+      "link": "Developed by AlphaDigital",
+      "href": "#"
+    }
+  ]
+}

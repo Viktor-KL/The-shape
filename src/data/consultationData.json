@@ -36,9 +36,6 @@
       "value": "massage5"
     }
   ],
-  "selectDefaultValue": {
-    "defaultValue": "Вибір послуги"
-  },
   "submitBtn": {
     "type": "submit",
     "value": "Проконсультуватись"
