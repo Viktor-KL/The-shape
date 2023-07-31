@@ -24,6 +24,7 @@
 
     "button": {
         "text": "Записатись",
-        "className": "dark"
+        "className": "dark",
+        "href": "#consultation"
     }
 }

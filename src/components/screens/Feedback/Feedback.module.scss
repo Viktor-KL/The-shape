@@ -1,0 +1,50 @@
+@import '/src/styles/resources/';
+
+.section {
+    background: $light-green;
+    padding: 6em 0;
+}
+
+.head {
+    @include full-width-content;
+}
+
+.headContent {
+    max-width: 40em;
+}
+
+.arrows {
+    @include flexible;
+    gap: 1.5em;
+
+    Button {
+        max-width: 60px;
+        height: 60px;
+        @include flexible;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.swiper {
+    margin-top: 2em;
+}
+
+.block {
+    border: 1px solid $black;
+    padding: 1em;
+}
+
+.description {
+    @include description(16px)
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: $black;
+    margin: .5em 0;
+}

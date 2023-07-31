@@ -6,10 +6,11 @@ import styles from './Button.module.scss'
 type Props = {
   type: 'button' | 'anchor' | 'link'
   className?: string
-  text: string
+  text: any
   href?: string
   customClass?: string
   handleClick?: MouseEventHandler<HTMLButtonElement>
+  onClick?: any
 }
 
 const Button: FC<Props> = ({
@@ -28,7 +29,7 @@ const Button: FC<Props> = ({
           type={type}
           className={style}
           onClick={handleClick}
-          aria-label={text}
+          // aria-label={text}
         >
           {text}
         </button>

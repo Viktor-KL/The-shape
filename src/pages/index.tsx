@@ -2,6 +2,7 @@ import About from 'components/screens/About/About'
 import Benefits from 'components/screens/Benefits/Benefits'
 import Consultation from 'components/screens/Consultation/Consultation'
 import Faq from 'components/screens/Faq/Faq'
+import Feedback from 'components/screens/Feedback/Feedback'
 import Offer from 'components/screens/Offer/Offer'
 import Service from 'components/screens/Service/Service'
 import Head from 'next/head'
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <Benefits />
       <Consultation />
+      <Feedback />
       <Faq />
     </>
   )

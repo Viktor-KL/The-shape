@@ -30,6 +30,7 @@ const Header: FC = () => {
             text={headerData.button.text}
             className={headerData.button.className}
             customClass={styles.button}
+            href={headerData.button.href}
           />
         </div>
       </div>
