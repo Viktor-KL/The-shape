@@ -14,6 +14,10 @@
   @include flexible;
   gap: 2em;
 
+  @include tablet-large {
+    display: none;
+  }
+
   a {
     font-size: 16px;
     opacity: .7;
@@ -22,5 +26,43 @@
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.btnWrapper {
+  @include flexible;
+  gap: 1em;
+}
+
+.mobileMenu {
+  top: 85px;
+  left: 0;
+  width: 100%;
+  background: $bg-color;
+  position: absolute;
+}
+
+.itemLinkWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: $accent-color;
+}
+
+.burgerBtn {
+  background: none;
+  display: none;
+
+  @include tablet-large {
+    display: block;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
