@@ -9,6 +9,10 @@
     display: flex;
     align-items: center;
     gap: 1.5em;
+
+    @include tablet-large {
+        flex-direction: column-reverse;
+    }
 }
 
 .description {
@@ -18,4 +22,16 @@
 
 .button {
     display: inline;
+}
+
+.image {
+    width: 290px;
+    height: 320px;
+}
+
+.button {
+    @include phablet {
+        display: flex;
+        justify-content: center;
+    }
 }

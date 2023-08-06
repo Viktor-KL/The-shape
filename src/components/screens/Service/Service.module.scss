@@ -21,15 +21,31 @@
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+
+  @include tablet-large {
+    gap: 1em;
+  }
 }
 
 .service {
   @include flexible;
   gap: 1.5em;
+
+  @include laptop {
+    flex-direction: column;
+  }
+
+  @include tablet-large {
+    gap: 1em;
+  }
 }
 
 .selectWrapper {
   position: relative;
+
+  @include tablet-large {
+    width: 90vw;
+  }
 }
 
 .select {
@@ -39,12 +55,24 @@
   font-family: $main-font-family;
   height: 100px;
   width: 390px;
-  padding: 36px;
+  padding: 0 1.8em;
   border-radius: 0;
   -webkit-appearance: none;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+
+  @include tablet-large {
+    height: 66px;
+  }
+
+  @include phone {
+    font-size: 24px;
   }
 }
 
@@ -56,6 +84,10 @@
   &::after {
     content: url('./../../../../public/img/arrow.svg');
     font-size: 18px;
+  }
+
+  @include tablet-large {
+    top: 35%;
   }
 }
 
@@ -70,6 +102,22 @@
   &:hover {
     cursor: pointer;
   }
+
+  @include laptop {
+    width: 100%;
+  }
+
+  @include tablet-large {
+    height: 66px;
+  }
+
+  @include tablet {
+    height: 100px;
+  }
+
+  @include phone {
+    font-size: 24px;
+  }
 }
 
 .contentWrapper {
@@ -77,6 +125,16 @@
   gap: 1em;
   padding: 2em;
   border: 1px solid $white;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include phone {
+    .image {
+      width: 100%;
+    }
+  }
 }
 
 .name {

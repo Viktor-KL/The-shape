@@ -6,6 +6,7 @@ import serviceData from 'data/serviceData.json'
 import styles from './Service.module.scss'
 import massagePhoto from '/public/img/service/img-1.png'
 import ServiceHead from './ServiceHead'
+import { Select } from 'antd'
 
 interface OptionContent {
   name: string
@@ -19,7 +20,7 @@ const Service: FC = () => {
     [key: string]: OptionContent
   }>(getInitialContent())
 
-  const handleSelectChnage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedOption = e.target.value
     setSelectedOption(selectedOption)
     updateSelectedContent(selectedOption)
@@ -30,7 +31,7 @@ const Service: FC = () => {
     updateSelectedContent(option)
   }
 
-  function getInitialContent(): { [key: string]: OptionContent} {
+  function getInitialContent(): { [key: string]: OptionContent } {
     return {
       massage1: {
         name: 'massage1',
@@ -75,8 +76,8 @@ const Service: FC = () => {
   return (
     <section className={styles.section} id={serviceData.section}>
       <div className='container'>
+      <ServiceHead />
         <div className={styles.wrapper}>
-          <ServiceHead />
           <div className={styles.service}>
             <div className={styles.options}>
               <div className={styles.selectWrapper}>
@@ -84,7 +85,7 @@ const Service: FC = () => {
                   name='service'
                   defaultValue='Масажі'
                   className={styles.select}
-                  onChange={handleSelectChnage}
+                  onChange={handleSelectChange}
                 >
                   <option className={styles.option} value='massage1'>
                     Массаж1
@@ -127,6 +128,7 @@ const Service: FC = () => {
                 width={245}
                 height={280}
                 alt='massage'
+                className={styles.image}
               />
             </div>
           </div>

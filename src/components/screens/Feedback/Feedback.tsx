@@ -65,6 +65,17 @@ const Feedback: FC = () => {
             spaceBetween={30}
             className={styles.swiper}
             ref={swiperRef}
+            breakpoints={{
+              992: {
+                slidesPerView: 3,
+              },
+              576: {
+                slidesPerView: 2,
+              },
+              200: {
+                slidesPerView: 1,
+              }
+            }}            
           >
             {data.map((item, key) => (
               <SwiperSlide key={key}>

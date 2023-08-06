@@ -8,8 +8,8 @@ import IImage from 'shared/interfaces/IImage'
 const FaqImage: FC = () => {
   const { url, alt, height, width }: IImage = faqData.image
   return (
-    <div className={styles.image}>
-      <Image src={url} alt={alt} height={height} width={width} />
+    <div className={styles.imageWraapper}>
+      <Image className={styles.image} src={url} alt={alt} height={height} width={width} />
     </div>
   )
 }

@@ -4,6 +4,11 @@
     @include full-width-content;
     gap: 1.5em;
     padding: 6em 0;
+
+    @include tablet {
+        flex-direction: column-reverse;
+        gap: 0.5em;
+    }
 }
 
 .a {
@@ -26,4 +31,18 @@
     @include description(16px);
     font-family: $main-font-family;
     padding-top: 8px;
+}
+
+.image { 
+    @include tablet-large {
+        width: 235px;
+        height: 310px;
+        object-fit: contain;
+        justify-content: center;
+    }
+
+    @include tablet {
+        width: 380px;
+        height: 400px;
+    }
 }

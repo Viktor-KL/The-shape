@@ -24,13 +24,14 @@ const ConsultationForm: FC = () => {
           <input type={item.type} placeholder={item.placeholder} className={styles.input}/>
         ))}
         <Select
-          style={{ maxWidth: 390 }}
           defaultValue='Вибір послуги'
           className={styles.select}
           options={optionsData.map((item) => ({
             value: item.value,
             label: item.label,
           }))}
+          popupClassName={styles.dropdownStyle}
+          
         />
         <input type={type} value={value} className={styles.submitBtn}/>
       </div>

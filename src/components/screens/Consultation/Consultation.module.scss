@@ -1,12 +1,35 @@
 @import '/src/styles/resources/';
 
 .section {
-  padding: 6em;
+  padding: 6em 0;
   background: $accent-color;
 
   * {
     color: $white;
+    border-color: $white !important;
   }
+
+  :global {
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      height: 60px;
+      background: none;
+      font-size: 16px;
+      font-family: $main-font-family;
+      border-radius: 0;
+      border: 1px solid $white;
+      padding-left: 20px;
+      @include flexible;
+
+      span {
+        color: $white !important;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.dropdownStyle {
+  border-radius: 0;
 }
 
 .wrapper {
@@ -22,39 +45,59 @@
 .form {
   display: grid;
   gap: 1em;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
 
-  * {
-    max-width: 390px !important;
-    padding: 1em;
+  input, .select, .submitBtn {
+    max-width: 390px;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    * {
+      max-width: 100% !important;
+    }
   }
 }
 
 .input {
   background: none;
   border: 1px solid $white;
+  padding: 1em;
 
   &::placeholder {
     color: $white;
     opacity: 0.7;
     font-size: 16px;
   }
+
+  @include tablet {
+    display: block;
+    width: 100%;
+  }
 }
 
 .submitBtn {
-    background: $white;
-    color: $black;
-    font-size: 16px;
-    height: 60px;
-    @include transition;
+  background: $white;
+  color: $black;
+  font-size: 16px;
+  height: 60px;
+  @include transition;
 
-    &:hover {
-        cursor: pointer;
-        background: $light-green;
-    }
+  &:hover {
+    cursor: pointer;
+    background: $light-green;
+  }
 
-    &:active {
-        background: #B3B4AE;
-    }
+  &:active {
+    background: #b3b4ae;
+  }
 }
 
+.image {
+  @include laptop {
+    display: none;
+  }
+}

@@ -1,7 +1,7 @@
 @import '/src/styles/resources/';
 
 .section {
-    padding: 6em;
+    padding: 6em 0;
     position: relative;
 }
 
@@ -20,6 +20,18 @@
     flex-direction: column;
     gap: .5em;
     padding: 1em;
+
+    @include tablet-large {
+        width: 47%;
+    }
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include phone {
+        width: 100%;
+    }
 }
 
 .description {
@@ -36,4 +48,18 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.left_leaves {
+    @include tablet-large {
+        width: 190px;
+        height: 145px;
+    }
+}
+
+.right_leaves {
+    @include phone {
+        width: 200px;
+        height: 150px;
+    }
 }

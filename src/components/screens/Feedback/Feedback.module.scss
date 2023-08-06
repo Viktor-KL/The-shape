@@ -7,6 +7,7 @@
 
 .head {
     @include full-width-content;
+    gap: 1em;
 }
 
 .headContent {
@@ -25,6 +26,10 @@
 
         &:hover {
             cursor: pointer;
+        }
+
+        @include phone {
+            padding: 26px;
         }
     }
 }

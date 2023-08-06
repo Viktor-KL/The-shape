@@ -11,7 +11,7 @@ const AboutImage: FC = () => {
 
   return (
     <div className={styles.content}>
-      <Image src={url} width={width} height={height} alt={alt} />
+      <Image src={url} width={width} height={height} alt={alt} className={styles.image} />
     </div>
   )
 }
