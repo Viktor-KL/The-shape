@@ -66,7 +66,7 @@ const Service: FC = () => {
     }
   }
 
-  const updateSelectedContent = (option) => {
+  const updateSelectedContent = (option: any) => {
     setSelectedContent((prevContent) => ({
       ...prevContent,
       [option]: getInitialContent()[option],
