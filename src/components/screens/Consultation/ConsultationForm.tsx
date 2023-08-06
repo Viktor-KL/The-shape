@@ -21,7 +21,7 @@ const ConsultationForm: FC = () => {
     <form onSubmit={handle}>
       <div className={styles.form}>
         {inputsData.map((item, key) => (
-          <input type={item.type} placeholder={item.placeholder} className={styles.input}/>
+          <input key={key} type={item.type} placeholder={item.placeholder} className={styles.input}/>
         ))}
         <Select
           defaultValue='Вибір послуги'

@@ -11,7 +11,7 @@ const FooterInfo: FC = () => {
   return (
     <div className={styles.info}>
       {data.map((item, key) => (
-        <a className={styles.link} href={item.href}>{item.link}</a>
+        <a key={key} className={styles.link} href={item.href}>{item.link}</a>
       ))}
     </div>
   ) 

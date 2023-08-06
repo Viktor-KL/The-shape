@@ -12,7 +12,7 @@ const data: IFooterLinks[] = footerData.items
   return (
     <div className={styles.items}>
       {data.map((item, key) => (
-        <a href={item.href} className={styles.link}>{item.link}</a>
+        <a key={key} href={item.href} className={styles.link}>{item.link}</a>
       ))}
       <FooterSocials />
     </div>
